@@ -1,0 +1,84 @@
+/* ROOT */
+:root {
+  --bc-color: #fff;
+  --text-color: #222;
+  --title-color: #000;
+}
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 2px dotted #ff7500;
+  outline-offset: 2px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: '', 'Arial', sans-serif;
+  background-color: var(--bc-color);
+  color: var(--text-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
